@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>DeleteStudent</servlet-name>
+        <servlet-class>servlet.DeleteStudent</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Add</servlet-name>
+        <servlet-class>servlet.Add</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Del</servlet-name>
+        <servlet-class>servlet.Del</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Edit</servlet-name>
+        <servlet-class>servlet.Edit</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StudentServ</servlet-name>
+        <servlet-class>servlet.StudentServ</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Add</servlet-name>
+        <url-pattern>/Add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Del</servlet-name>
+        <url-pattern>/Del</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Edit</servlet-name>
+        <url-pattern>/Edit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentServ</servlet-name>
+        <url-pattern>/StudentServ</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
